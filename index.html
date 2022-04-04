@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='style.css' rel='stylesheet'>
+    <title>Keith Haring Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Keith Haring Portfolio</h1>
+        <img src="dancers.png" alt="dancing doodles" width="100%" height="100%">
+    </header>
+    <nav></nav>
+    <div id="homey">
+        <h2>Keith <br>Haring <br>Art</h2>
+        <div class="gallery">
+            <a target="_blank" href="doodle1.jpeg">
+                <img src="doodle1.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="doodle2.jpeg">
+                <img src="doodle2.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="doodle3.jpeg">
+                <img src="doodle3.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="doodle4.jpg">
+                <img src="doodle4.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="doodle5.jpeg">
+                <img src="doodle5.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="doodle6.jpeg">
+                <img src="doodle6.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+        </div>
+        </div>
+        <br>
+        <div id="about">
+            <img class="left" src="portrait.png" alt="portrait" width="30%" height="30%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum</p>
+        </div>
+        <br>
+        <div id="gallery">
+        <ul>
+            <li>projects</li>
+            <li>projects</li>
+            <li>projects</li>
+        </ul>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="ouh.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="ouh2.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="ouh3.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="ouh4.jpeg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        </div>
+        <br>
+
+    <div class="contact">
+        <section id="contact">
+  
+            <h1 class="section-header">Contact</h1>
+            
+            <div class="contact-wrapper">
+            
+            <!-- Left contact page --> 
+              
+              <form id="contact-form" class="form-horizontal" role="form">
+                 
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                  </div>
+                </div>
+          
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                  </div>
+                </div>
+          
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                
+                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                  <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                  </div>
+                
+                </button>
+                
+              </form>
+              
+            <!-- Left contact page --> 
+              
+                <div class="direct-contact-container">
+          
+                  <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                    
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+                    
+                  </ul>
+          
+                </div>
+              
+            </div>
+            <script>  
+            document.querySelector('#contact-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                e.target.elements.name.value = '';
+                e.target.elements.email.value = '';
+                e.target.elements.message.value = '';
+              });
+              </script>
+          </section> 
+    </div>
+    <footer><p>&copy;this website is for educational purposes. All rights reserved ECUAD</p><br><a href="#top"><img src="top.svg" width="100%" height="100%"></a></footer>
+</body>
+
+</html>
